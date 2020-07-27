@@ -2768,7 +2768,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CFLAGS = "-DBOM_SUPPORT=1";
 				PRODUCT_NAME = slc_builder;
-				SDKROOT = macosx.internal;
+				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_STYLE = "non-global";
 				USER_HEADER_SEARCH_PATHS = "../launch-cache/";
@@ -2810,7 +2810,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CFLAGS = "-DBOM_SUPPORT=1";
 				PRODUCT_NAME = slc_builder;
-				SDKROOT = macosx.internal;
+				SDKROOT = macosx;
 				STRIP_STYLE = "non-global";
 				USER_HEADER_SEARCH_PATHS = "../launch-cache/";
 				VALID_ARCHS = "x86_64 x86_64h";
