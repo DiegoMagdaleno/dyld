@@ -26,3 +26,4 @@ DerivedData/
 ## Gcc Patch
 /*.gcno
 .DS_Store
+dyld_shared_cache_util
