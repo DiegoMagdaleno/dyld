@@ -1296,7 +1296,7 @@ static bool hashBootAndFileInfo(const char* mainExecutablePath, char hashString[
     //for (size_t i=0; i < sizeof(hashBits); ++i)
       //  putHexByte(hashBits[i], s);
     //*s = '\0';
-#endif
+//#endif
     return true;
 }
 

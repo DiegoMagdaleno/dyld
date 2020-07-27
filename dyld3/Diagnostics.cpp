@@ -85,8 +85,8 @@ void Diagnostics::error(const char* format, va_list list)
 {
     //FIXME: this should be assertNoError(), but we currently overwrite some errors
     //assertNoError();
-    _buffer = _simple_salloc();
-    _simple_vsprintf(_buffer, format, list);
+    //_buffer = _simple_salloc();
+    //_simple_vsprintf(_buffer, format, list);
 
 #if BUILDING_CACHE_BUILDER
     if ( !_verbose )
@@ -113,20 +113,21 @@ bool Diagnostics::noError() const
 void Diagnostics::clearError()
 {
     if ( _buffer )
-        _simple_sfree(_buffer);
+       // _simple_sfree(_buffer);
     _buffer = nullptr;
 }
 
 void Diagnostics::assertNoError() const
 {
     if ( _buffer != nullptr )
-        abort_report_np("%s", _simple_string(_buffer));
+        //abort_report_np("%s", _simple_string(_buffer));
+        return;
 }
 
 #if !BUILDING_CACHE_BUILDER
 const char* Diagnostics::errorMessage() const
 {
-    return _simple_string(_buffer);
+   // return _simple_string(_buffer);
 }
 
 #else

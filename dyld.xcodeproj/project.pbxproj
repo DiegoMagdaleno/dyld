@@ -3236,8 +3236,8 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx.internal;
-				SUPPORTED_PLATFORMS = "macosx iphoneos watchos appletvos bridgeos";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
 			};
 			name = Debug;
 		};
@@ -3268,8 +3268,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx.internal;
-				SUPPORTED_PLATFORMS = "macosx iphoneos watchos appletvos bridgeos";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
 			};
 			name = Release;
 		};
@@ -3462,7 +3462,7 @@
 				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
 				INSTALL_PATH = "$(INSTALL_LOCATION)/usr/local/bin";
 				PRODUCT_NAME = dyld_shared_cache_util;
-				SDKROOT = macosx.internal;
+				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphoneos watchos appletvos bridgeos";
 			};
 			name = Debug;
@@ -3477,7 +3477,7 @@
 				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
 				INSTALL_PATH = "$(INSTALL_LOCATION)/usr/local/bin";
 				PRODUCT_NAME = dyld_shared_cache_util;
-				SDKROOT = macosx.internal;
+				SDKROOT = macosx;
 				SKIP_INSTALL = NO;
 				SUPPORTED_PLATFORMS = "macosx iphoneos watchos appletvos bridgeos";
 			};
