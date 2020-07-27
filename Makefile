@@ -13,7 +13,7 @@ install:
 	@echo "Installing dyld_shared_cache_util"
 	$(MAKE) -C .
 	@install -d $(DESTDIR)/$(PREFIX)/bin
-	@install -m 777 $(DESTDIR)/dyld_shared_cache_util $(DESTDIR)/$(PREFIX)/bin
+	@install -m 777 .$(DESTDIR)/dyld_shared_cache_util $(DESTDIR)/$(PREFIX)/bin
 
 .PHONY: clean
 clean:
